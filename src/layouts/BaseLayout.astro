@@ -32,6 +32,10 @@ const gaId = import.meta.env.PUBLIC_GA_ID;
     <meta name="theme-color" content="#09090b" />
     <link rel="canonical" href={canonical} />
 
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" />
 
@@ -49,7 +53,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <!-- Structured Data -->
+    <!-- Structured SEO Schema -->
     <script
       type="application/ld+json"
       set:html={JSON.stringify({
@@ -57,8 +61,10 @@ const gaId = import.meta.env.PUBLIC_GA_ID;
         "@type": "Person",
         name: "Sahil Arora",
         url: "https://sahilarora.tech/",
-        image: "https://sahilarora.tech/images/sahil.jpg",
+        image: "https://sahilarora.tech/images/sahil.webp",
         jobTitle: "Technology Leader",
+        description:
+          "Technology leader specializing in cloud architecture, AI transformation, enterprise strategy, automation, governance, and IT/OT alignment.",
         email: "mailto:sahila99@gmail.com",
         sameAs: [
           "https://www.linkedin.com/in/sahil-arora-38263b158"
@@ -69,7 +75,10 @@ const gaId = import.meta.env.PUBLIC_GA_ID;
           "Enterprise Technology Strategy",
           "Automation",
           "Cybersecurity Governance",
-          "IT/OT Alignment"
+          "IT/OT Alignment",
+          "Enterprise Architecture",
+          "IT OT Convergence",
+          "Automation Strategy"
         ]
       })}
     />
